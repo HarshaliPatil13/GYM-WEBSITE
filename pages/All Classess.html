@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>All Classes</title>
+    <script>
+       module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/aspect-ratio'),
+    ],
+  }
+      </script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Sidebar -->
+    <div class="flex h-screen">
+      <!-- Left Sidebar -->
+      <div class="w-64 h-screen bg-black text-white">
+          <!-- Logo -->
+          <div class="flex items-center justify-center h-20 bg-black">
+            <img src="images/logo.png" alt="Fitness Logo" class="h-16">
+          </div>
+        
+          <!-- Navigation Menu -->
+          <nav class="mt-4">
+            <ul>
+              <!-- Admin -->
+              
+              <li>
+                <div class="group">
+                  <div class="flex items-center px-6 py-3 hover:bg-gray-700 cursor-pointer">
+                    <span class="material-icons mr-4"><img src="images/adminvector.png" width="20px" height="20px"></span>
+                    <span>Admin</span>
+                    <span class="ml-auto material-icons group-hover:rotate-180 transition-transform">
+                      V
+                    </span>
+                  </div>
+                  <!-- Dropdown Submenu -->
+                  <ul class="hidden group-hover:block bg-gray-800">
+                    <li class="flex items-center px-8 py-3 hover:bg-gray-700 cursor-pointer ">
+                      <span class="material-icons mr-4"><img src="images/All Classes.png" width="25px" height="25px"></span>
+                      <span><a href="addtrainee.html">All Classes</a></span>
+                    </li>
+                    <li class="flex items-center px-8 py-3 hover:bg-gray-700 cursor-pointer ">
+                      <span class="material-icons mr-4"><img src="images/Attendance.png" width="25px" height="25px"></span>
+                      <span><a href="attendence.html">Attendence</a></span>
+                    </li>
+                    
+                  </ul>
+                </div>
+              </li>
+
+
+
+              <!-- All Members Section -->
+              <li>
+                <div class="group">
+                  <div class="flex items-center px-6 py-3 hover:bg-gray-700 cursor-pointer">
+                    <span class="material-icons mr-4"><img src="images/AllMembersVector (6).png" width="25px" height="25px"></span>
+                    <span>All members</span>
+                    <span class="ml-auto material-icons group-hover:rotate-180 transition-transform">
+                      V
+                    </span>
+                  </div>
+                  <!-- Dropdown Submenu -->
+                  <ul class="hidden group-hover:block bg-gray-800">
+                    <li class="flex items-center px-8 py-3 hover:bg-gray-700 cursor-pointer ">
+                      <span class="material-icons mr-4"><img src="images/Add Trainee.png" width="25px" height="25px"></span>
+                      <span><a href="addtrainee.html">Add Trainee</a></span>
+                    </li>
+                    <li class="flex items-center px-8 py-3 hover:bg-gray-700 cursor-pointer ">
+                      <span class="material-icons mr-4"><img src="images/Dropped Trainee.png" width="25px" height="25px"></span>
+                      <span><a href="droptrainee.html">Dropped Trainee</a></span>
+                    </li>
+                    <li class="flex items-center px-8 py-3 hover:bg-gray-700 cursor-pointer">
+                      <span class="material-icons mr-4"><img src="images/Member Details Vector (11).png" width="25px" height="25px"></span>
+                      <span><a href="memberdetail.html">Member Detail</a></span>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+        
+              <!-- Trainer -->
+              <li class="flex items-center px-6 py-3 hover:bg-gray-700 cursor-pointer">
+                <span class="material-icons mr-4"><img src="images/Trainer Vector (10).png" width="25px" height="25px"></span>
+                <span>Trainer</span>
+              </li>
+        
+              <!-- Trainee -->
+              <li class="flex items-center px-6 py-3 hover:bg-gray-700 cursor-pointer">
+                <span class="material-icons mr-4"><img src="images/TraineeGroup.png" width="25px" height="25px"></span>
+                <span>Trainee</span>
+              </li>
+        
+              <!-- Health Updates -->
+              <li class="flex items-center px-6 py-3 hover:bg-gray-700 cursor-pointer">
+                <span class="material-icons mr-4"><img src="images/Health Updates Vector (7).png" width="25px" height="25px"></span>
+                <span>Health Updates</span>
+              </li>
+        
+              <!-- Member Payments -->
+              <li class="flex items-center px-6 py-3 hover:bg-gray-700 cursor-pointer">
+                <span class="material-icons mr-4"><img src="images/Member Payments Vector (9).png" width="25px" height="25px"></span>
+                <span>Member Payments</span>
+              </li>
+        
+              <!-- Plan -->
+              <li class="flex items-center px-6 py-3 hover:bg-gray-700 cursor-pointer">
+                <span class="material-icons mr-4"><img src="images/Plan Group (1).png" width="25px" height="25px"></span>
+                <span>Plan</span>
+              </li>
+            </ul>
+          </nav>
+        </div>
+<div class="w-4/5 p-6">
+    <!-- Header -->
+    <div class="flex justify-between items-center mb-6">
+        <h2 class="text-2xl font-semibold">Welcome Admin!</h2>
+        <div class="flex items-center space-x-4">
+             
+            <img src="images/Notifications.png" alt="Class Image" class="w-8 h-8 mr-4">
+            <img src="images/Settings.png" alt="Class Image" class="w-8 h-8">
+
+            <span class="text-gray-800 font-medium">Username</span>
+            <img src="images/placeholder.png" alt="User" class="w-10 h-10 ">
+        </div>
+    </div>
+     <!-- Header -->
+     <div class="max-w-7xl mx-auto mt-6 px-4">
+        <div class="bg-white rounded-lg shadow-lg p-6">
+     <div class="flex justify-between items-center mb-6">
+        <h1 class="text-2xl font-semibold text-gray-800">All Classes</h1>
+        <div class="flex space-x-4">
+          <input 
+            type="text" 
+            placeholder="Search Class name" 
+            class="border border-gray-300 rounded-md p-2 focus:outline-none focus:ring focus:ring-blue-300">
+          <button class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"><span><a href="addclass.html">Add Class</a></span></button>
+        </div>
+      </div>
+  
+     <!-- Table Section -->
+     <div class="w-full overflow-x-auto">
+        <table class="table-auto w-full text-left whitespace-no-wrap">
+          <thead class="bg-gray-300"> <tr>
+              <th class="py-3 px-4 text-left text-gray-900">Sr.No</th>
+              <th class="py-3 px-4 text-left text-gray-900">Class Name</th>
+              <th class="py-3 px-4 text-left text-gray-900">Class Trainer</th>
+              <th class="py-3 px-4 text-left text-gray-900">Start Time</th>
+              <th class="py-3 px-4 text-left text-gray-900">End Time</th>
+              <th class="py-3 px-4 text-left text-gray-900">Description</th>
+              <th class="py-3 px-4 text-left text-gray-900">Batch</th>
+              <th class="py-3 px-4 text-left text-gray-900">Action</th>
+            </tr>
+          </thead>
+          <tbody class="text-gray-700">
+            <!-- Repeatable Rows -->
+            <tr class="border-t">
+              <td class="py-3 px-4">1</td>
+              <td class="py-3 px-4 flex items-center">
+                <img src="images/Yoga.png" alt="Yoga Icon" class="w-6 h-6 mr-3">
+                Yoga
+              </td>
+              <td class="py-3 px-4">Trainer Name</td>
+              <td class="py-3 px-4">08:00 AM</td>
+              <td class="py-3 px-4">09:00 AM</td>
+              <td class="py-3 px-4">From a yoga class, you'll learn to improve flexibility, build strength, enhance balance, and develop  . . . . . . </td>
+              <td class="py-3 px-4">Morning</td>
+              <td class="py-3 px-4">
+                <div class="flex space-x-2">
+                  <button class="text-blue-500 hover:underline"><span><img src="images/editvector.png" width="18px" height="18px"></span></button>
+                  <button class="text-blue-500 hover:underline"><img src="images/deletevector.png" width="18px" height="18px"></span></button>
+                </div>
+              </td>
+            </tr>
+            <!-- Add more rows here -->
+  
+            <tr class="border-t">
+              <td class="py-3 px-4">1</td>
+              <td class="py-3 px-4 flex items-center">
+                <img src="images/Yoga.png" alt="Yoga Icon" class="w-6 h-6 mr-3">
+                Yoga
+              </td>
+              <td class="py-3 px-4">Trainer Name</td>
+              <td class="py-3 px-4">08:00 AM</td>
+              <td class="py-3 px-4">09:00 AM</td>
+              <td class="py-3 px-4">From a yoga class, you'll learn to improve flexibility, build strength, enhance balance, and develop  . . . . . . </td>
+              <td class="py-3 px-4">Morning</td>
+              <td class="py-3 px-4">
+                <div class="flex space-x-2">
+                    <button class="text-blue-500 hover:underline"><span><img src="images/editvector.png" width="18px" height="18px"></span></button>
+                    <button class="text-blue-500 hover:underline"><img src="images/deletevector.png" width="18px" height="18px"></span></button>
+                  </div>
+                </td>
+              </tr>
+    
+              <tr class="border-t">
+                <td class="py-3 px-4">1</td>
+                <td class="py-3 px-4 flex items-center">
+                  <img src="images/Yoga.png" alt="Yoga Icon" class="w-6 h-6 mr-3">
+                  Yoga
+                </td>
+                <td class="py-3 px-4">Trainer Name</td>
+                <td class="py-3 px-4">08:00 AM</td>
+                <td class="py-3 px-4">09:00 AM</td>
+                <td class="py-3 px-4">From a yoga class, you'll learn to improve flexibility, build strength, enhance balance, and develop  . . . . . . </td>
+                <td class="py-3 px-4">Morning</td>
+                <td class="py-3 px-4">
+                  <div class="flex space-x-2">
+                    <button class="text-blue-500 hover:underline"><span><img src="images/editvector.png" width="18px" height="18px"></span></button>
+                    <button class="text-blue-500 hover:underline"><img src="images/deletevector.png" width="18px" height="18px"></span></button>
+                  </div>
+                </td>
+              </tr>
+    
+              <tr class="border-t">
+                <td class="py-3 px-4">1</td>
+                <td class="py-3 px-4 flex items-center">
+                  <img src="images/Yoga.png" alt="Yoga Icon" class="w-6 h-6 mr-3">
+                  Yoga
+                </td>
+                <td class="py-3 px-4">Trainer Name</td>
+                <td class="py-3 px-4">08:00 AM</td>
+                <td class="py-3 px-4">09:00 AM</td>
+                <td class="py-3 px-4">From a yoga class, you'll learn to improve flexibility, build strength, enhance balance, and develop  . . . . . . </td>
+                <td class="py-3 px-4">Morning</td>
+                <td class="py-3 px-4">
+                  <div class="flex space-x-2">
+                    <button class="text-blue-500 hover:underline"><span><img src="images/editvector.png" width="18px" height="18px"></span></button>
+                    <button class="text-blue-500 hover:underline"><img src="images/deletevector.png" width="18px" height="18px"></span></button>
+                  </div>
+                </td>
+              </tr>
+    
+              <tr class="border-t">
+                <td class="py-3 px-4">1</td>
+                <td class="py-3 px-4 flex items-center">
+                  <img src="images/Yoga.png" alt="Yoga Icon" class="w-6 h-6 mr-3">
+                  Yoga
+                </td>
+                <td class="py-3 px-4">Trainer Name</td>
+                <td class="py-3 px-4">08:00 AM</td>
+                <td class="py-3 px-4">09:00 AM</td>
+                <td class="py-3 px-4">From a yoga class, you'll learn to improve flexibility, build strength, enhance balance, and develop  . . . . . . </td>
+                <td class="py-3 px-4">Morning</td>
+                <td class="py-3 px-4">
+                  <div class="flex space-x-2">
+                    <button class="text-blue-500 hover:underline"><span><img src="images/editvector.png" width="18px" height="18px"></span></button>
+                    <button class="text-blue-500 hover:underline"><img src="images/deletevector.png" width="18px" height="18px"></span></button>
+                  </div>
+                </td>
+              </tr>
+    
+              <tr class="border-t">
+                <td class="py-3 px-4">1</td>
+                <td class="py-3 px-4 flex items-center">
+                    <img src="images/yoga.png" alt="Yoga Icon" class="w-6 h-6 mr-3">
+                    Yoga
+                  </td>
+                  <td class="py-3 px-4">Trainer Name</td>
+                  <td class="py-3 px-4">08:00 AM</td>
+                  <td class="py-3 px-4">09:00 AM</td>
+                  <td class="py-3 px-4">From a yoga class, you'll learn to improve flexibility, build strength, enhance balance, and develop  . . . . . . </td>
+                  <td class="py-3 px-4">Morning</td>
+                  <td class="py-3 px-4">
+                    <div class="flex space-x-2">
+                      <button class="text-blue-500 hover:underline"><span><img src="images/editvector.png" width="18px" height="18px"></span></button>
+                      <button class="text-blue-500 hover:underline"><img src="images/deletevector.png" width="18px" height="18px"></span></button>
+                    </div>
+                  </td>
+                </tr>
+      
+              </tbody>
+            </table>
+          </div>
+        </div>
+      
+      </body>
+      </html>            
